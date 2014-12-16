@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/setting_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/titile_layout_bg" >
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_back_bg" />
+
+        <TextView
+            android:id="@+id/training_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="54544"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/reset_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/restart_training_bg" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/question_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title_layout"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:textSize="18sp" />
+
+    <com.lisz.banktraining.view.JustifyTextView
+        android:id="@+id/question_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/question_id"
+        android:layout_below="@id/title_layout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/question_id"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/selection_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/question_content"
+        android:layout_below="@id/question_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selection_layout_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/selection_layout_a"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/a_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <CheckBox
+                    android:id="@+id/point_a"
+                    style="@style/selection_checkboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:checked="false"
+                    android:focusableInTouchMode="false" />
+
+                <com.lisz.banktraining.view.JustifyTextView
+                    android:id="@+id/selection_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/point_a"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:layout_below="@id/a_layout"
+                android:background="@drawable/divider_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/selection_layout_b"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/b_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <CheckBox
+                    android:id="@+id/point_b"
+                    style="@style/selection_checkboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:checked="false"
+                    android:focusableInTouchMode="false" />
+
+                <com.lisz.banktraining.view.JustifyTextView
+                    android:id="@+id/selection_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/point_b"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:layout_below="@id/b_layout"
+                android:background="@drawable/divider_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/selection_layout_c"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/c_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                 <CheckBox
+                    android:id="@+id/point_c"
+                    style="@style/selection_checkboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:clickable="false"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+                <com.lisz.banktraining.view.JustifyTextView
+                    android:id="@+id/selection_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/point_c"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3px"
+                android:layout_below="@id/c_layout"
+                android:background="@drawable/divider_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/selection_layout_d"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <CheckBox
+                    android:id="@+id/point_d"
+                    style="@style/selection_checkboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:checked="false"
+                    android:focusableInTouchMode="false" />
+
+            <com.lisz.banktraining.view.JustifyTextView
+                android:id="@+id/selection_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/point_d"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mutiple_choose_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/selection_layout"
+        android:layout_alignRight="@id/selection_layout"
+        android:layout_below="@id/selection_layout"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/submit"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <com.lisz.banktraining.view.JustifyTextView
+        android:id="@+id/answer_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/selection_layout"
+        android:layout_alignRight="@id/selection_layout"
+        android:layout_below="@id/mutiple_choose_layout"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@color/dark_orange"
+        android:textSize="18sp" />
+
+</RelativeLayout>

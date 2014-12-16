@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/horizontal_pop_bg"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    >
+     <Button
+            android:id="@+id/single_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_bg"
+            android:text="@string/single_choice"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/mutiple_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_bg"
+            android:text="@string/mutiple_choice"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/judge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_bg"
+            android:text="@string/judge"
+            android:textColor="@color/white" />
+
+</LinearLayout>

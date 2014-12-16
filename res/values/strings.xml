@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">题库</string>
+	<string name="start_training">开始练习</string>
+	<string name="setting">设置</string>
+	<string name="error_questions">错误题目回顾</string>
+	
+	<string name="single_choice">单选</string>
+	<string name="mutiple_choice">多选</string>
+	<string name="judge">判断</string>
+	
+	<string name="save_singleChoice_process">保存单选题练习进度</string>
+	<string name="save_mutipleChoice_process">保存多选题练习进度</string>
+	<string name="save_judge_process">保存判断题练习进度</string>
+	<string name="auto_save_wrong_question">自动保存错误题目</string>
+	<string name="clear_error_questions">清空错误题目记录</string>
+	
+	<string name="dialog_ok">确定</string>
+	<string name="dialog_cancle">取消</string>
+	<string name="confirm_dialog_message">确定清空错误题目的记录？</string>
+	
+	<string name="submit">提交</string>
+	<string name="next_ques">下一题</string>
+	<string name="over_training_tips">您已完成该分类的所有题目，是否重新开始？</string>
+	<string name="no_errorQues_record">干得漂亮！当前没有错误问题</string>
+	
+	<string name="reset_process">确认重置练习进度吗？</string>
+	
+	
+</resources>
